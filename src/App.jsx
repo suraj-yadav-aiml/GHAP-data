@@ -6,11 +6,16 @@ function App() {
     <>
       <header>
         <div id="logo-img">
-          <img src={logo} />
+          {/* Fixed accessibility warning */}
+          <img src={logo} alt="N8N and GitHub Logo" />
         </div>
-        <h1>Learn & Master GitHub Actions</h1>
+        <h1>Learn GitHub Actions & n8n</h1>
       </header>
-      <MainContent />
+      
+      {/* Semantic HTML wrapper */}
+      <main>
+        <MainContent />
+      </main>
     </>
   );
 }
